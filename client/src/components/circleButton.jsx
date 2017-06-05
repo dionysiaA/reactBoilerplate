@@ -32,14 +32,14 @@ export class CircleButton extends React.Component {
       width: this.width,
       height: this.height,
       textAlight: 'center',
-      marginRight: '15',
-      marginBottom:'15',
+      marginRight: 15,
+      marginBottom: 15,
       display: 'inline-block',
       padding: '1em',
       borderRadius: '50%',
       textAlign: 'center'
     }
-    console.log('i am in the circle button but its not rendered')
+
     return (
       <div className='button' style={buttonStyles} onClick={this.handleSize}>
         <span className='textReact' style={{lineHeight:`${this.height}px`}}>

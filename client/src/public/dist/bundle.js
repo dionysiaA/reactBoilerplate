@@ -14092,14 +14092,14 @@ var CircleButton = exports.CircleButton = function (_React$Component) {
         width: this.width,
         height: this.height,
         textAlight: 'center',
-        marginRight: '15',
-        marginBottom: '15',
+        marginRight: 15,
+        marginBottom: 15,
         display: 'inline-block',
         padding: '1em',
         borderRadius: '50%',
         textAlign: 'center'
       };
-      console.log('i am in the circle button but its not rendered');
+
       return _react2.default.createElement(
         'div',
         { className: 'button', style: buttonStyles, onClick: this.handleSize },
