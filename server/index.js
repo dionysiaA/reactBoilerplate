@@ -3,7 +3,7 @@ const express = require('express');
 const volleyball = require('volleyball');
 const bodyParser = require('body-parser');
 
-const PORT = 3000;
+const PORT = 5000;
 
 const app = express();
 
@@ -14,7 +14,7 @@ app.use(volleyball);
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true}));
 
-app.listen(PORT, () => {
+app.listen(process.env.PORT || PORT, () => {
   console.log('Server listening on Port: ', PORT);
 })
 
